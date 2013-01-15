@@ -1,0 +1,27 @@
+
+
+<h1>Listing messagetolds</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Msg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @messagetolds.each do |messagetold| %>
+  <tr>
+    <td><%= messagetold.user %></td>
+    <td><%= messagetold.msg %></td>
+    <td><%= link_to 'Show', messagetold %></td>
+    <td><%= link_to 'Edit', edit_messagetold_path(messagetold) %></td>
+    <td><%= link_to 'Destroy', messagetold, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Messagetold', new_messagetold_path %>

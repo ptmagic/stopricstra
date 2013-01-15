@@ -1,0 +1,41 @@
+  <div class="container blue">
+    <div>
+    <p>this is a game</p>
+    </div>
+     <div>
+        <div class="span12" id="container_by" style="min-width: 400px; height: 400px; margin: 0 auto">
+        </div>
+     <blockquote class="pull-right">
+     <p>默认为USD对JPY，如有需要可在本页的汇率查询输入想要查询的汇率（以上汇率报价为中间）</p>
+        <small>数据更新默认为15秒</small>
+        </blockquote>
+    </div>
+  <div class="span12">
+  <form class="form-horizontal" action="/welcome/play" method=post>
+  <fieldset>
+    <legend>汇率查询</legend>
+    <div class="control-group">
+      <label class="control-label" for="baseprice">基础货币</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="baseprice">
+        <p class="help-block"></p>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="holdprice">报价货币</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="holdprice">
+        <p class="help-block"></p>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <div class="controls">
+      <a class="btn btn-small btn-info" type="submit" onclick="makefun();" ><i class="icon-play icon-white"></i> 开始</a>
+<a class="btn btn-small btn-info" href="/welcome/play"><i class="icon-pause icon-white"></i> 暂停</a>
+<a class="btn btn-small btn-info" href="/welcome/play"><i class="icon-info-sign icon-white"></i> 开始</a>
+    </div>
+   </div>
+  </fieldset>
+</form>
+</div>

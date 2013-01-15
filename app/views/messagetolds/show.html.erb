@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @messagetold.user %>
+</p>
+
+<p>
+  <b>Msg:</b>
+  <%= @messagetold.msg %>
+</p>
+
+
+<%= link_to 'Edit', edit_messagetold_path(@messagetold) %> 
+<%= link_to 'Back', messagetolds_path %>

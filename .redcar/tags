@@ -1,0 +1,89 @@
+1354798386
+A	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function A(a,b){return parseInt(a,b||10)}function ma(a){return typeof a==="string"}function Z(a){return typeof a==="object"}function Fa(a){return Object.prototype.toString.call(a)==="[object Array]"}function Ga(a){return typeof a==="number"}function na(a){return K.log(a)/K.LN10}function ca(a){return K.pow(10,a)}function ya(a,b){for(var c=a.length;c--;)
+AddCloumnNodeIdToBolgposts	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121124130302_add_cloumn_node_id_to_bolgposts.rb	class AddCloumnNodeIdToBolgposts 
+Application	/home/ptmagic/work/rubytest/stopricstra/config/application.rb	  class Application 
+ApplicationController	/home/ptmagic/work/rubytest/stopricstra/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/home/ptmagic/work/rubytest/stopricstra/app/helpers/application_helper.rb	module ApplicationHelper
+B	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function B(a,b,c){var d,e;if(ma(b))u(c)?a.setAttribute(b,c):a&&a.getAttribute&&(e=a.getAttribute(b));else if(u(b)&&Z(b))for(d in b)a.setAttribute(d,b[d]);return e}function oa(a){return Fa(a)?a:[a]}function p(){var a=arguments,b,c,d=a.length;for(b=0;b<d;b++)if(c=a[b],typeof c!=="undefined"&&c!==null)return c}function G(a,b){if(Ha&&b&&b.opacity!==x)b.filter="alpha(opacity="+b.opacity*100+")";s(a.style,b)}function S(a,b,c,d,e){a=z.createElement(a)
+BlogController	/home/ptmagic/work/rubytest/stopricstra/app/controllers/blog_controller.rb	class BlogController 
+BlogControllerTest	/home/ptmagic/work/rubytest/stopricstra/test/functional/blog_controller_test.rb	class BlogControllerTest 
+BlogHelper	/home/ptmagic/work/rubytest/stopricstra/app/helpers/blog_helper.rb	module BlogHelper
+BlogHelperTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/helpers/blog_helper_test.rb	class BlogHelperTest 
+Bolgpost	/home/ptmagic/work/rubytest/stopricstra/app/models/bolgpost.rb	class Bolgpost 
+BolgpostTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/bolgpost_test.rb	class BolgpostTest 
+BrowsingTest	/home/ptmagic/work/rubytest/stopricstra/test/performance/browsing_test.rb	class BrowsingTest 
+CreateBolgposts	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121122032043_create_bolgposts.rb	class CreateBolgposts 
+CreateMessagetolds	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20120919142236_create_messagetolds.rb	class CreateMessagetolds 
+CreateNodes	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123141427_create_nodes.rb	class CreateNodes 
+Eb	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Eb(){this.symbol=this.color=0}function Fb(a,b){var c=a.length,d,e;for(e=0;e<c;e++)a[e].ss_i=e;a.sort(function(a,c){d=b(a,c);return d===0?a.ss_i-c.ss_i:d});for(e=0;e<c;e++)delete a[e].ss_i}function Ma(a){for(var b=a.length,c=a[0];b--;)a[b]<c&&(c=a[b]);return c}function za(a){for(var b=a.length,c=a[0];b--;)a[b]>c&&(c=a[b]);return c}function Aa(a,b){for(var c in a)a[c]&&a[c]!==b&&a[c].destroy&&a[c].destroy(),delete a[c]}function Na(a){Za||(Za=S(ia));a&&Za.appendChild(a)
+GameController	/home/ptmagic/work/rubytest/stopricstra/app/controllers/game_controller.rb	class GameController 
+GameControllerTest	/home/ptmagic/work/rubytest/stopricstra/test/functional/game_controller_test.rb	class GameControllerTest 
+GameHelper	/home/ptmagic/work/rubytest/stopricstra/app/helpers/game_helper.rb	module GameHelper
+GameHelperTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/helpers/game_helper_test.rb	class GameHelperTest 
+Gb	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Gb(){var a=O.global.useUTC,b=a?"getUTC":"get",c=a?"setUTC":"set";Ya=a?Date.UTC:function(a,b,c,g,h,i){return(new Date(a,b,p(c,1),p(g,0),p(h,0),p(i,0))).getTime()
+Ia	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Ia(a,b,c,d){var e=O.lang,f=a;b===-1?(b=(a||0).toString(),a=b.indexOf(".")>-1?b.split(".")[1].length:0):a=isNaN(b=N(b))?2:b;var b=a,c=c===void 0?e.decimalPoint:c,d=d===void 0?e.thousandsSep:d,e=f<0?"-":"",a=String(A(f=N(+f||0).toFixed(b))),g=a.length>3?a.length%3:0;return e+(g?a.substr(0,g)+d:"")+a.substr(g).replace(/(\d{3})(?=\d)
+Messagetold	/home/ptmagic/work/rubytest/stopricstra/app/models/messagetold.rb	class Messagetold 
+MessagetoldTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/messagetold_test.rb	class MessagetoldTest 
+MessagetoldsController	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	class MessagetoldsController 
+MessagetoldsControllerTest	/home/ptmagic/work/rubytest/stopricstra/test/functional/messagetolds_controller_test.rb	class MessagetoldsControllerTest 
+MessagetoldsHelper	/home/ptmagic/work/rubytest/stopricstra/app/helpers/messagetolds_helper.rb	module MessagetoldsHelper
+MessagetoldsHelperTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/helpers/messagetolds_helper_test.rb	class MessagetoldsHelperTest 
+Nb	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Nb(a,b)
+Node	/home/ptmagic/work/rubytest/stopricstra/app/models/node.rb	class Node 
+NodeTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/node_test.rb	class NodeTest 
+Ob	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Ob(a,b,c,d){var e=[],f={},g=O.global.useUTC,h,i=new Date(b),b=a.unitRange,j=a.count;b>=D[ib]&&(i.setMilliseconds(0),i.setSeconds(b>=D[Ua]?0:j*V(i.getSeconds()/j)));if(b>=D[Ua])i[Ab](b>=D[Ja]?0:j*V(i[jb]()/j));if(b>=D[Ja])i[Bb](b>=D[pa]?0:j*V(i[kb]()
+Pa	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function Pa(a,b,c){this.axis=a;this.pos=b;this.type=c||"";this.isNew=!0;c||this.addLabel()}function nb(a,b){this.axis=a;if(b)this.options=b,this.id=b.id;return this}function Hb(a,b,c,d,e){var f=a.chart.inverted;this.axis=a;this.isNegative=c;this.options=b;this.x=d;this.stack=e;this.alignOptions={align:b.align||(f?c?"left":"right":"center"),verticalAlign:b.verticalAlign||(f?"middle":c?"bottom":"top"),y:p(b.y,f?4:c?14:-6),x:p(b.x,f?c?-6:6:0)
+PlayController	/home/ptmagic/work/rubytest/stopricstra/app/controllers/play_controller.rb	class PlayController 
+PlayControllerTest	/home/ptmagic/work/rubytest/stopricstra/test/functional/play_controller_test.rb	class PlayControllerTest 
+PlayHelper	/home/ptmagic/work/rubytest/stopricstra/app/helpers/play_helper.rb	module PlayHelper
+PlayHelperTest	/home/ptmagic/work/rubytest/stopricstra/test/unit/helpers/play_helper_test.rb	class PlayHelperTest 
+RemoveCloumnAuthorToBolgposts	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123154813_remove_cloumn_author_to_bolgposts.rb	class RemoveCloumnAuthorToBolgposts 
+RemoveCloumnAuthorasdasdasdToBolgposts	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123160103_remove_cloumn_authorasdasdasd_to_bolgposts.rb	class RemoveCloumnAuthorasdasdasdToBolgposts 
+RemoveCloumnNodeToBolgposts	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123155555_remove_cloumn_node_to_bolgposts.rb	class RemoveCloumnNodeToBolgposts 
+Stopricstra	/home/ptmagic/work/rubytest/stopricstra/config/application.rb	module Stopricstra
+TestCase	/home/ptmagic/work/rubytest/stopricstra/test/test_helper.rb	class ActiveSupport::TestCase
+a	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function a(){var a=b.length,d;for(d=0;d<a;d++)b[d]();b=[]}var b=[];return{push:function(c,d){b.length===0&&Qb(d,a);b.push(c)}}}()
+a	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function a(){if(b.selectionMarker)
+a	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function a(a){var g=c.width||db(d,"width"),h=c.height||db(d,"height"),a=a?a.target:L;if(g&&h&&(a===L||a===z))
+a	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function a(){var a={width:b.yAxis.len,height:b.xAxis.len};n(["group","trackerGroup","markerGroup"],function(c){b[c]&&b[c].attr(a).invert()})
+b	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/modules/exporting.js	function b(){p.attr(l);o.attr(j)}var c=this,d=c.renderer,e=s(c.options.navigation.buttonOptions,a),f=e.onclick,g=e.menuItems,h=e.width,k=e.height,o,p,q,a=e.borderWidth,j={stroke:e.borderColor},l={stroke:e.symbolStroke,fill:e.symbolFill},m=e.symbolSize||12;if(!c.exportDivElements)
+c	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function c(){var a=this.points||oa(this),b=a[0].series,c;c=[b.tooltipHeaderFormatter(a[0].key)];n(a,function(a)
+change	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20120919142236_create_messagetolds.rb	  def change
+change	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121124130302_add_cloumn_node_id_to_bolgposts.rb	  def change
+change	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123141427_create_nodes.rb	  def change
+change	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121122032043_create_bolgposts.rb	  def change
+checkoutcontent	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/blog.js	function checkoutcontent(id)
+create	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def create
+da	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function da(a,b){var c=function(){};c.prototype=new a;s(c.prototype,b);return c}function Ia(a,b,c,d){var e=O.lang,f=a;b===-1?(b=(a||0).toString(),a=b.indexOf(".")>-1?b.split(".")[1].length:0):a=isNaN(b=N(b))?2:b;var b=a,c=c===void 0?e.decimalPoint:c,d=d===void 0?e.thousandsSep:d,e=f<0?"-":"",a=String(A(f=N(+f||0).toFixed(b))),g=a.length>3?a.length%3:0;return e+(g?a.substr(0,g)+d:"")+a.substr(g).replace(/(\d{3})(?=\d)
+destroy	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def destroy
+down	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123154813_remove_cloumn_author_to_bolgposts.rb	  def down
+down	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123160103_remove_cloumn_authorasdasdasd_to_bolgposts.rb	  def down
+down	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123155555_remove_cloumn_node_to_bolgposts.rb	  def down
+edit	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def edit
+hideaboutbydiv	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/blog.js	function hideaboutbydiv(id)
+index	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def index
+index	/home/ptmagic/work/rubytest/stopricstra/app/controllers/blog_controller.rb	  def index 
+j	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function j(){var a=o.styles,a=a&&a.textAlign,b=M*(1-y),c;c=h?0:Ea;if(u(Da)&&(a==="center"||a==="right"))b+={center:0.5,right:1}[a]*(Da-q.width);(b!==r.x||c!==r.y)&&r.attr({x:b,y:c});r.x=b;r.y=c}function k(a,b){p?p.attr(a,b):fb[a]=b}function l(){r.add(o);o.attr({text:a,x:b,y:c});u(e)&&o.attr({anchorX:e,anchorY:f})}var m=this,o=m.g(i),r=m.text("",0,0,g).attr({zIndex:1})
+ja	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function ja(a){return parseFloat(a.toPrecision(14))}function ua(a,b){Oa=p(a,b.animation)}function Gb(){var a=O.global.useUTC,b=a?"getUTC":"get",c=a?"setUTC":"set";Ya=a?Date.UTC:function(a,b,c,g,h,i){return(new Date(a,b,p(c,1),p(g,0),p(h,0),p(i,0))).getTime()
+makefun	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/asierate2.js	function makefun()
+new	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def new
+ob	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function ob(){this.init.apply(this,arguments)}function pb(a,b){var c=b.borderWidth,d=b.style,e=A(d.padding);this.chart=a;this.options=b;this.crosshairs=[];this.now={x:0,y:0};this.isHidden=!0;this.label=a.renderer.label("",0,0,b.shape,null,null,b.useHTML,null,"tooltip").attr({padding:e,fill:b.backgroundColor,"stroke-width":c,r:b.borderRadius,zIndex:8}).css(d).css({padding:0}).hide().add();$||this.label.shadow(b.shadow);this.shared=b.shared}function qb(a,b)
+processScroll	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/applicatio.js	function processScroll()
+rb	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function rb(a){this.init(a)}function sb(a,b){var c,d=a.series;a.series=null;c=C(O,a);c.series=a.series=d;var d=c.chart,e=d.margin,e=Z(e)?e:[e,e,e,e];this.optionsMarginTop=p(d.marginTop,e[0]);this.optionsMarginRight=p(d.marginRight,e[1]);this.optionsMarginBottom=p(d.marginBottom,e[2]);this.optionsMarginLeft=p(d.marginLeft,e[3]);this.runChartClick=(e=d.events)
+s	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function s(a,b){var c;a||(a={});for(c in b)a[c]=b[c];return a}function la(){for(var a=0,b=arguments,c=b.length,d={};a<c;a++)d[b[a++]]=b[a];return d}function A(a,b){return parseInt(a,b||10)}function ma(a){return typeof a==="string"}function Z(a){return typeof a==="object"}function Fa(a){return Object.prototype.toString.call(a)==="[object Array]"}function Ga(a){return typeof a==="number"}function na(a){return K.log(a)/K.LN10}function ca(a){return K.pow(10,a)}function ya(a,b){for(var c=a.length;c--;)
+sa	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function sa(a,b){return Array((b||2)+1-String(a).length).join(0)+a}function hb(a,b,c,d){var e,c=p(c,1);e=a/c;b||(b=[1,2,2.5,5,10],d&&d.allowDecimals===!1&&(c===1?b=[1,2,5,10]:c<=0.1&&(b=[1/c])));for(d=0;d<b.length;d++)if(a=b[d],e<=(b[d]+(b[d+1]||b[d]))/2)break;a*=c;return a}function Nb(a,b)
+show	/home/ptmagic/work/rubytest/stopricstra/app/controllers/game_controller.rb	  def show 
+show	/home/ptmagic/work/rubytest/stopricstra/app/controllers/play_controller.rb	  def show 
+show	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def show
+show	/home/ptmagic/work/rubytest/stopricstra/app/controllers/blog_controller.rb	  def show
+showaboutbydiv	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/blog.js	function showaboutbydiv(id)
+showorhide	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/blog.js	function showorhide()
+test_homepage	/home/ptmagic/work/rubytest/stopricstra/test/performance/browsing_test.rb	  def test_homepage
+u	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function u(a){return a!==x&&a!==null}function B(a,b,c){var d,e;if(ma(b))u(c)?a.setAttribute(b,c):a&&a.getAttribute&&(e=a.getAttribute(b));else if(u(b)&&Z(b))for(d in b)a.setAttribute(d,b[d]);return e}function oa(a){return Fa(a)?a:[a]}function p(){var a=arguments,b,c,d=a.length;for(b=0;b<d;b++)if(c=a[b],typeof c!=="undefined"&&c!==null)return c}function G(a,b){if(Ha&&b&&b.opacity!==x)b.filter="alpha(opacity="+b.opacity*100+")";s(a.style,b)}function S(a,b,c,d,e){a=z.createElement(a)
+up	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123154813_remove_cloumn_author_to_bolgposts.rb	  def up
+up	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123160103_remove_cloumn_authorasdasdasd_to_bolgposts.rb	  def up
+up	/home/ptmagic/work/rubytest/stopricstra/db/migrate/20121123155555_remove_cloumn_node_to_bolgposts.rb	  def up
+update	/home/ptmagic/work/rubytest/stopricstra/app/controllers/messagetolds_controller.rb	  def update
+va	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function va(){}function Pa(a,b,c){this.axis=a;this.pos=b;this.type=c||"";this.isNew=!0;c||this.addLabel()}function nb(a,b){this.axis=a;if(b)this.options=b,this.id=b.id;return this}function Hb(a,b,c,d,e){var f=a.chart.inverted;this.axis=a;this.isNegative=c;this.options=b;this.x=d;this.stack=e;this.alignOptions={align:b.align||(f?c?"left":"right":"center"),verticalAlign:b.verticalAlign||(f?"middle":c?"bottom":"top"),y:p(b.y,f?4:c?14:-6),x:p(b.x,f?c?-6:6:0)
+x	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/modules/exporting.js	function x(a){for(var b=a.length;b--;)typeof a[b]==="number"&&(a[b]=Math.round(a[b])-0.5);return a}var g=Highcharts,y=g.Chart,z=g.addEvent,B=g.removeEvent,r=g.createElement,u=g.discardElement,t=g.css,s=g.merge,k=g.each,n=g.extend,C=Math.max,h=document,D=window,A=h.documentElement.ontouchstart!==void 0,v=g.getOptions()
+za	/home/ptmagic/work/rubytest/stopricstra/app/assets/javascripts/highcharts.js	function za(a){for(var b=a.length,c=a[0];b--;)a[b]>c&&(c=a[b]);return c}function Aa(a,b){for(var c in a)a[c]&&a[c]!==b&&a[c].destroy&&a[c].destroy(),delete a[c]}function Na(a){Za||(Za=S(ia));a&&Za.appendChild(a)

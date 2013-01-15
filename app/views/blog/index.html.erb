@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>汇率玩家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+  </head>
+
+  <body>
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+            <% @nodebolgpost.each do |node|   %>
+              <li class="active"><a href="#"><%= node.title%></a></li>
+              <% node.bolgposts.limit(5).all.each do |bolg|%>
+                <li><a href="#" onclick="checkoutcontent(<%=bolg.id%>)"><%= bolg.title%></a></li>
+              <% end %>
+            <% end %>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1 id="blogtitle">依法打击自荐参选人大代表的不法分子</h1>
+            <p id="blogcontent">
+      针对当前出现的一些不法分子自荐参选人大代表的行为，各级党和政府既不能惊慌失措，甚至提出修宪、修法限制公民选举权，授人以柄的幼稚提议，更不能软弱涣散，听之任之，让这些所谓独立人士进入各级人大立法机构；既要从思想上和行动上旗帜鲜明地坚决维护党的利益，及时采取各种切实有力措施，破坏敌对势力的图谋，又要注意工作方式、方法，在现有宪法和法律许可的范围内，依法、坚决、果断地处置此类事件，防止以粗暴简单的方法损害党和政府在群众中的形象，维护宪法和法律的尊严。 
+      </p>
+            <div class="span1.5">
+            <p><a class="btn btn-primary btn-large" id="showabout" onclick="showaboutbydiv('takeabout');">talk about &raquo;</a>
+            <a class="btn btn-danger btn-large" id="hideabout" onclick="hideaboutbydiv('takeabout');"  style="display: none;">shut up &raquo;</a></p>
+            </div>          
+          </div>
+          <%=render :partial=>"comments"%>
+          <div style = "display: none;" id="takeabout">
+          <form class="form-horizontal" action="/welcome/play" method=post>
+            <fieldset>
+              <legend>评论</legend>
+              <div class="control-group">
+                <label class="control-label" for="baseprice">主题</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="baseprice">
+                  <p class="help-block"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="holdprice">内容</label>
+                <div class="controls">
+                  <textarea class="input-xlarge" id="holdprice" rows="6"></textarea>
+                  <p class="help-block"></p>
+                </div>
+            </div>
+    
+            <div class="control-group">
+              <div class="controls">
+              <a class="btn btn-small btn-info" type="submit" onclick="makefun();" ><i class="icon-play icon-white"></i> 开始</a>
+              </div>
+             </div>
+            </fieldset>
+          </form>          
+          </div>
+      
+      <hr>
+      <footer>
+        <p>&copy; moneyPlay</p>
+      </footer>
+      </hr>
+    </div><!--/.fluid-container-->
+
+  </body>
+</html>
+
